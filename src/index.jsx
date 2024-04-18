@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
 import {
-  Routes, Route, NavLink, useParams, createBrowserRouter, RouterProvider,
+  Routes, Route, NavLink, useParams, createBrowserRouter, RouterProvider, Outlet,
 } from 'react-router-dom';
 
 function Nav(props) {
@@ -18,43 +18,59 @@ function Nav(props) {
   );
 }
 function About(props) {
-  return <div> <Nav /> All there is to know about me </div>;
+  return <div> All there is to know about me </div>;
 }
 
 function Welcome(props) {
-  return <div> <Nav /> Welcome</div>;
+  return <div> Welcome</div>;
 }
 
 function Test(props) {
   const { id } = useParams();
-  return <div> <Nav /> ID: {id} </div>;
+  return <div> ID: {id} </div>;
 }
 
 function FallBack(props) {
-  return <div><Nav />URL Not Found</div>;
+  return <div>URL Not Found</div>;
 }
 
-function Root(props) {
+function NavbarWrapper() {
   return (
     <div>
       <Nav />
+      <Outlet />
     </div>
   );
 }
 
 const router = createBrowserRouter([
-  { path: '/', Component: Welcome },
-  { path: '/about', Component: About },
-  { path: '/test/:id', Component: Test },
-  { path: '*', Component: FallBack },
-  // { path: '/*', Component: Root },
+  {
+    path: '/',
+    element: <NavbarWrapper />,
+    children: [
+      {
+        path: '/',
+        Component: Welcome,
+      },
+      {
+        path: '/about',
+        Component: About,
+      },
+      {
+        path: '/test/:id',
+        Component: Test,
+      },
+      {
+        path: '*',
+        Component: FallBack,
+      },
+    ],
+  },
 ]);
 
 const root = createRoot(document.getElementById('main'));
 root.render(
-  <RouterProvider router={router}>
-    <Root />
-  </RouterProvider>,
+  <RouterProvider router={router} />,
 );
 
 // import React from 'react';
