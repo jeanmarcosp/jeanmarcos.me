@@ -4,6 +4,8 @@ import './style.scss';
 import {
   Routes, Route, NavLink, useParams, createBrowserRouter, RouterProvider, Outlet,
 } from 'react-router-dom';
+import Counter from './components/counter';
+import Controls from './components/controls';
 
 function Nav(props) {
   return (
@@ -22,7 +24,13 @@ function About(props) {
 }
 
 function Welcome(props) {
-  return <div> Welcome</div>;
+  return (
+    <div>
+      Welcome
+      <Counter />
+      <Controls />
+    </div>
+  );
 }
 
 function Test(props) {
