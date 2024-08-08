@@ -7,47 +7,64 @@ body, html {
 :root {
   text-size-adjust: 100%;
 }
+a {
+  text-decoration: none;
+}
 .navbar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #ECF0FE;
+  // background-color: #ECF0FE;
   z-index: 1000;
   padding: 2vh;
-  height: 8vh;
+  height: 10vh;
   width: 100vw;
   font-family: "Montserrat", "sans-serif";
 }
 .navbar ul {
   list-style-type: none;
   overflow: hidden;
-  padding: 0;
+  padding: 40;
   margin: 0;
+  margin-right: 85px;
+  display: flex;
+  justify-content: center;
 }
 .navbar li {
   display: inline-block;
 }
 .navbar li a {
   display: block;
-  color: #4C6EF5;
+  color: black;
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
 }
-.navbar li a:hover {
-  background-color: #DBE4FF;
-  border-radius: 8px;
+.navbar li:last-child a {
+  color: white; 
+}
+
+// .navbar li a:hover {
+//   background-color: #DBE4FF;
+//   border-radius: 8px;
+// }
+.project-card-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 390px)); 
+  gap: 50px; 
+  padding: 10px 6px;
+  justify-content: center; 
 }
 .foot {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #ECF0FE;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2vh;
   height: 4vh;
   z-index: 1000; 
+  margin-bottom: 10px;
 }
