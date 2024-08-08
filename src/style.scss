@@ -1,19 +1,53 @@
-body,
-html {
-  font-family: "Roboto", sans-serif;
+body, html {
+  font-family: "Montserrat", "sans-serif";
   background: white;
   height: 100%;
-}
-.logo {
-  background-image: url("img/image.jpg");
-  width: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  margin: 0;
 }
 :root {
   text-size-adjust: 100%;
 }
-.active {
-  color: pink;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #ECF0FE;
+  z-index: 1000;
+  padding: 2vh;
+  height: 8vh;
+  width: 100vw;
+  font-family: "Montserrat", "sans-serif";
+}
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  display: inline-block;
+}
+.navbar li a {
+  display: block;
+  color: #4C6EF5;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #DBE4FF;
+  border-radius: 8px;
+}
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ECF0FE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
+  height: 4vh;
+  z-index: 1000; 
 }
