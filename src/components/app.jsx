@@ -14,7 +14,7 @@ function FallBack(props) {
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/jeanmarcos.me">
       <div>
         <NavBar />
         <Routes>
