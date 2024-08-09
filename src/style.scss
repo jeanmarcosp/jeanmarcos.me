@@ -14,7 +14,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  // background-color: #ECF0FE;
   z-index: 1000;
   padding: 2vh;
   height: 10vh;
@@ -44,10 +43,6 @@ a {
   color: white; 
 }
 
-// .navbar li a:hover {
-//   background-color: #DBE4FF;
-//   border-radius: 8px;
-// }
 .project-card-holder {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(390px, 390px)); 
@@ -55,6 +50,38 @@ a {
   padding: 10px 6px;
   justify-content: center; 
 }
+
+.home-div{
+  height: 86vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.text-div{
+  width: 60vw;
+  padding: 100px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-div{
+  margin-bottom: 20px;
+}
+
+.image-div {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+
+  & img {
+    width: 75%;
+    height: auto; 
+  }
+}
+
+
 .foot {
   position: fixed;
   bottom: 0;
@@ -66,5 +93,4 @@ a {
   padding: 2vh;
   height: 4vh;
   z-index: 1000; 
-  margin-bottom: 10px;
 }

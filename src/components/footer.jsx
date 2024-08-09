@@ -9,7 +9,7 @@ function Footer() {
         variant="gradient"
         gradient={{ from: 'violet', to: 'indigo', deg: 288 }}
         fw={500}
-      >{new Date().getFullYear()} Jeanmarcos Perez. All rights reserved.
+      >&copy; {new Date().getFullYear()} Jeanmarcos Perez. All rights reserved.
       </Text>
     </nav>
   );
