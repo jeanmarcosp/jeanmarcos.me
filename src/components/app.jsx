@@ -20,7 +20,7 @@ function App(props) {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="*" element={<Landing />} />
+          <Route path="*" element={<FallBack />} />
         </Routes>
         <Footer />
       </div>
