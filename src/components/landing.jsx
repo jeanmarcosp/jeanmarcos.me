@@ -27,7 +27,7 @@ function Landing() {
         </div>
       </div>
       <div className="image-div">
-        <img src="/assets/landing-image.jpg" alt="aerial view of miami" />
+        <img src="/jeanmarcos.me/assets/landing-image.jpg" alt="aerial view of miami" />
       </div>
     </div>
   );

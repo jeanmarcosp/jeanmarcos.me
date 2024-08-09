@@ -59,7 +59,7 @@ function NavBar() {
               size="sm"
               radius="md"
             >
-              <a href="src/assets/Jeanmarcos_Perez_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              <a href="jeanmarcos.me/assets/Jeanmarcos_Perez_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
             </Button>
           </li>
         </ul>
