@@ -21,7 +21,7 @@ const projectData = [
     title: "Personal Website",
     description:
         "Created a personal website to showcase my projects and resume. Coded using React.js and styled with Mantine component library",
-    link: "https://github.com/jeanmarcosp/personal-website",
+    link: "https://github.com/jeanmarcosp/jeanmarcos.me",
   },
   {
     id: 4,
