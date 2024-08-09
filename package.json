@@ -5,10 +5,12 @@
   "main": "src/index.js",
   "homepage": "https://jeanmarcosp.github.io/main",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -32,6 +34,7 @@
     "@tabler/icons-react": "^3.11.0",
     "@vitejs/plugin-react": "^4.2.1",
     "axios": "^1.6.8",
+    "gh-pages": "^6.1.1",
     "immer": "^10.0.4",
     "jquery": "^3.7.1",
     "lodash.debounce": "^4.0.8",
@@ -39,6 +42,7 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.22.3",
     "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
     "vite-plugin-favicons-inject": "^2.2.0",
     "zustand": "^4.5.2"
   }
