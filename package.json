@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "*description*",
   "main": "src/index.js",
-  "homepage": "https://jeanmarcosp.github.io/main",
+  "homepage": "https://jeanmarcosp.github.io",
   "scripts": {
   "dev": "vite",
   "build": "vite build",
