@@ -18,7 +18,7 @@ function App(props) {
       <div>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/jeanmarcos.me" element={<Landing />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="*" element={<FallBack />} />
         </Routes>
