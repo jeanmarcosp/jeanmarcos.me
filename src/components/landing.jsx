@@ -10,8 +10,8 @@ function Landing() {
           <Text
             size="xl"
             lh="xs"
-            variant="gradient"
-            gradient={{ from: 'violet', to: 'indigo', deg: 250 }}
+            c="white"
+            ta="center"
             fw={1000}
           >{landingData.header}
           </Text>
@@ -19,15 +19,12 @@ function Landing() {
         <div className="description-div">
           <Text
             size="md"
-            variant="gradient"
-            gradient={{ from: 'violet', to: 'indigo', deg: 250 }}
+            c="white"
+            ta="center"
             fw={500}
           >{landingData.blurb}
           </Text>
         </div>
-      </div>
-      <div className="image-div">
-        <img src="assets/landing-image.jpg" alt="aerial view of miami" />
       </div>
     </div>
   );
