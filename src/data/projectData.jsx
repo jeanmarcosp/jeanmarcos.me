@@ -52,7 +52,7 @@ const projectData = [
     langauge: "Python",
     title: "Computational Photography",
     description:
-        "Course work including an image processing pipeline, an hdr imaging pipeline, lightfield and depth from focus, and photometric stero.",
+        "Course work including an image processing pipeline, an hdr imaging pipeline, lightfield and depth from focus, and photometric stereo.",
     link: "https://github.com/jeanmarcosp/computational-photography",
   },
   {
