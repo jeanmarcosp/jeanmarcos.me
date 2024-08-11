@@ -29,7 +29,6 @@ a {
 .navbar ul {
   list-style-type: none;
   overflow: hidden;
-  margin: 0;
   margin-right: 85px;
   display: flex;
   justify-content: center;
@@ -37,17 +36,13 @@ a {
     margin-right: 11px;
   }
 }
-.navbar li {
-  display: inline-block;
-}
 .navbar li a {
-  display: block;
-  color: black;
+  display: flex;
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;
   @media only screen and (max-width: 640px) {
-    padding: 8px 12px;
+    padding: 8px 2vw;
   }
 }
 .navbar li:last-child a {
