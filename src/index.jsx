@@ -1,10 +1,8 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 import { MantineProvider, createTheme, rem } from '@mantine/core';
 import './style.scss';
 import App from './components/app';
-
-const root = createRoot(document.getElementById('main'));
 
 const theme = createTheme({
   fontSizes: {
@@ -15,8 +13,11 @@ const theme = createTheme({
   },
 });
 
+const root = ReactDOM.createRoot(document.getElementById('main'));
 root.render(
-  <MantineProvider theme={theme}>
-    <App />
-  </MantineProvider>,
+  <React.StrictMode>
+    <MantineProvider theme={theme}>
+      <App />
+    </MantineProvider>,
+  </React.StrictMode>,
 );

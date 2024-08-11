@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter, Routes, Route,
+  BrowserRouter, Routes, Route, HashRouter,
 } from 'react-router-dom';
 import NavBar from './nav-bar';
 import Landing from './landing';
@@ -14,7 +14,7 @@ function FallBack(props) {
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <NavBar />
         <Routes>
@@ -24,7 +24,7 @@ function App(props) {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
