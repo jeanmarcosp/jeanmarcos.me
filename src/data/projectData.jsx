@@ -36,7 +36,7 @@ const projectData = [
     langauge: "Python",
     title: "Seamless Copy & Paste",
     description:
-        "Used least sqaures and gradients to seamlessly blend an object or texture from a source image into a target image.",
+        "Used least squares and gradients to seamlessly blend an object or texture from a source image onto a target image.",
     link: "https://github.com/jeanmarcosp/seamless-copy-paste",
   },
   {
