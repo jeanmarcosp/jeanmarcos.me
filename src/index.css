@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --color-bg: #0a0b0f;
+  --color-surface: #121319;
+  --color-surface-2: #191b23;
+  --color-border: #262933;
+  --color-text: #e8eaf0;
+  --color-text-muted: #8b8fa3;
+  --color-accent: #22d3ee;
+  --color-accent-2: #a78bfa;
+}
+
+:root {
+  --dot-color: rgba(255, 255, 255, 0.07);
+  --glow-opacity: 0.22;
+
+  /* Per-skill/language syntax colors for the Hero skills panel and the
+     Projects badges — tuned for contrast against a dark surface here;
+     overridden with darker, more saturated shades for light mode below. */
+  --tech-typescript: #60a5fa;
+  --tech-javascript: #facc15;
+  --tech-react: #38bdf8;
+  --tech-node: #4ade80;
+  --tech-restful-apis: #a78bfa;
+  --tech-python: #34d399;
+  --tech-java: #fb923c;
+  --tech-c: #93c5fd;
+  --tech-sql: #2dd4bf;
+  --tech-azure: #f472b6;
+}
+
+/* Light mode, opted into via the ThemeToggle (persisted to localStorage,
+   applied to <html data-theme="light">). Dark, defined above, is the
+   default. */
+:root[data-theme="light"] {
+  --color-bg: #faf9f7;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1efe9;
+  --color-border: #e2e0d9;
+  --color-text: #17161b;
+  --color-text-muted: #5c5a63;
+  --color-accent: #7c3aed;
+  --color-accent-2: #d97706;
+  --dot-color: rgba(0, 0, 0, 0.06);
+  --glow-opacity: 0.45;
+
+  --tech-typescript: #1d4ed8;
+  --tech-javascript: #a16207;
+  --tech-react: #0369a1;
+  --tech-node: #15803d;
+  --tech-restful-apis: #6d28d9;
+  --tech-python: #047857;
+  --tech-java: #c2410c;
+  --tech-c: #4338ca;
+  --tech-sql: #0f766e;
+  --tech-azure: #be185d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  background-image: radial-gradient(circle at 1px 1px, var(--dot-color) 1px, transparent 0);
+  background-size: 28px 28px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Matches the nav's h-16 (4rem) so a section's top border lands flush
+   against the sticky nav's bottom border when scrolled to via anchor link. */
+section[id] {
+  scroll-margin-top: 4rem;
+}
