@@ -25,10 +25,10 @@ const projectData: Project[] = [
   },
   {
     id: 3,
-    language: 'JavaScript',
+    language: 'TypeScript',
     title: 'Personal Website',
     description:
-      'Created a personal website to showcase my projects and resume. Coded using React.js and styled with Mantine component library.',
+      'Used Claude Code to create a personal website to showcase my projects and resume. Coded using TypeScript and React.',
     link: 'https://github.com/jeanmarcosp/jeanmarcos.me',
   },
   {

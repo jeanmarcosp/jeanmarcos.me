@@ -9,7 +9,7 @@ import { getTechColor } from '../../data/techColors';
 // entries (Kotlin, React Native, Redux, Jest, Nest, Git, Jira,
 // Agile, CSS, HTML, Microsoft Office) that are real but less
 // central than the core stack below.
-const skills = ['TypeScript', 'React', 'Node', 'RESTful APIs', 'Python', 'Java', 'SQL', 'Azure'];
+const skills = ['Claude Code', 'TypeScript', 'React', 'Node', 'RESTful APIs', 'Python', 'Java', 'SQL', 'Azure'];
 
 function Hero() {
   return (
@@ -43,13 +43,18 @@ function Hero() {
         </div>
 
         <div className="relative">
+          {/* Two soft circular light sources, not a blurred rectangle — a
+              blurred hard-edged shape keeps a visible silhouette, while a
+              blurred circle stays a genuinely soft glow. */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -inset-6 -z-10 rounded-[2rem] blur-xl"
-            style={{
-              background: 'linear-gradient(135deg, var(--color-accent), var(--color-accent-2))',
-              opacity: 'var(--glow-opacity)',
-            }}
+            className="pointer-events-none absolute -left-10 -top-10 -z-10 h-40 w-40 rounded-full blur-3xl"
+            style={{ backgroundColor: 'var(--color-accent)', opacity: 'var(--glow-opacity)' }}
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-10 -right-10 -z-10 h-40 w-40 rounded-full blur-3xl"
+            style={{ backgroundColor: 'var(--color-accent-2)', opacity: 'var(--glow-opacity)' }}
           />
           <div className="overflow-hidden border border-border bg-surface">
             <div className="flex items-center gap-2 border-b border-border bg-surface-2 px-4 py-2.5">
