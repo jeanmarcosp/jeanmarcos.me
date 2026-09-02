@@ -3,14 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      // Applied before first paint so there's no flash of the wrong theme.
+      // The site defaults to dark; a stored preference overrides it.
+      (function () {
+        try {
+          if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {
+          // localStorage unavailable (private browsing, disabled storage) — falls back to dark.
+        }
+      })();
+    </script>
+    <meta name="description" content="Jeanmarcos Perez — Software Developer. Dartmouth CS grad building projects with React, Python, Java, and C.">
     <title>Jeanmarcos Perez</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="logo"></div>
-    <div id="main">Loading...</div>
-    <script type="module" src="/src/index.jsx"></script>
+    <div id="root">Loading...</div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
