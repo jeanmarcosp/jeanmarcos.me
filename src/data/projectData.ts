@@ -7,6 +7,12 @@ export interface Project {
 }
 
 const projectData: Project[] = [
+  {id:10,
+    language: 'TypeScript',
+    link: 'https://github.com/jeanmarcosp/guided',
+    title: 'Guided Maps',
+    description: 'Used Claude Code to build and ship a curated map-based guide iOS app, using React Native and TypeScript with a Supabase backend for the database, authentication, real-time sync, and cloud storage.'
+  },
   {
     id: 6,
     language: 'JavaScript',
